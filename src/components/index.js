@@ -8,24 +8,25 @@ import { getInitialCards, getUserInfo, changeProfile, addCard, changeAvatar, lik
 
 // Профиль
 
-const userName = document.querySelector('.profile__title');
-const userText = document.querySelector('.profile__description');
-const userAvatar = document.querySelector('.profile__image');
 
-const editProfileButton = document.querySelector('.profile__edit-button');
-const profilePopup = document.querySelector('.popup_type_edit');
+const userName = document.querySelector('.profile__title'); // Заголовок профиля
+const userText = document.querySelector('.profile__description'); //Описание профиля
+const userAvatar = document.querySelector('.profile__image'); // Картинка профиля
 
-const profileFrom = profilePopup.querySelector('.popup__form');
-const profileNameInput = profilePopup.querySelector('.popup__input_type_name');
-const profileTextInput = profilePopup.querySelector('.popup__input_type_description');
-const closeProfileButton = profilePopup.querySelector('.popup__close');
-const profileFormButton = profilePopup.querySelector('.popup__button');
+const editProfileButton = document.querySelector('.profile__edit-button'); // Кнопка редактирования профиля
+const profilePopup = document.querySelector('.popup_type_edit'); // Попап профиля
+
+const profileFrom = profilePopup.querySelector('.popup__form'); 
+const profileNameInput = profilePopup.querySelector('.popup__input_type_name'); // Ввод имени
+const profileTextInput = profilePopup.querySelector('.popup__input_type_description'); // Ввод описания
+const closeProfileButton = profilePopup.querySelector('.popup__close'); // Закрытия попапа
+const profileFormButton = profilePopup.querySelector('.popup__button'); // Отправка запроса на обновение данных
 
 // Аватар
 
-const avatarPopup = document.querySelector('.popup_type_avatar');
+const avatarPopup = document.querySelector('.popup_type_avatar'); // Аватарка
 
-const avatarForm = avatarPopup.querySelector('.popup__form');
+const avatarForm = avatarPopup.querySelector('.popup__form'); //
 const avatarUrlInput = avatarPopup.querySelector('.popup__input_type_avatar');
 const avatarFormButton = avatarPopup.querySelector('.popup__button');
 const closeAvatarButton = avatarPopup.querySelector('.popup__close');
